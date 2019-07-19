@@ -8,9 +8,9 @@ function Cards(props){
 return (
     
   <Card.Group>
-    <Card>
+    <Card class = 'cardsBox'>
     <Card.Content>
-     <Card.Header>{props.name}</Card.Header>
+     <Card.Header id='cardHeader'>{props.name}</Card.Header>
          Birth Year: {props.birth_year}<br />
          Gender: {props.gender}
      </Card.Content>

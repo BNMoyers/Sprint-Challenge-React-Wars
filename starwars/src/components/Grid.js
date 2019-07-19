@@ -18,7 +18,7 @@ import axios from 'axios';
     },[])
    
      return(
-  <Grid columns={3} >
+  <Grid centered columns={3} >
     {console.log('props check',character)}
     {character.map(results => (
         
