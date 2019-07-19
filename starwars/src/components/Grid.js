@@ -8,7 +8,7 @@ import axios from 'axios';
     const[character, setCharacter] = useState([]);
     useEffect(() => {
         axios
-        .get('https://swapi.co/api/people/')
+        .get('https://henry-mock-swapi.herokuapp.com/api')
         .then(res => {
           console.log('fetched data',res.data.results);
           setCharacter(res.data.results);
@@ -18,16 +18,19 @@ import axios from 'axios';
     },[])
    
      return(
-  <Grid columns={3} divided>
+  <Grid columns={3} >
     {console.log('props check',character)}
     {character.map(results => (
+        
+        <Grid.Column width={5}>
         <Cards  
             
             name={results.name}
             homeworld={results.homeworld}
-            birthYear={results.birthYear}
+            birth_year={results.birth_year}
             gender={results.gender}
             films={results.films}/>
+            </Grid.Column>
     ))}  
   </Grid>
   );

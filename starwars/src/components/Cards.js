@@ -9,14 +9,10 @@ return (
     
   <Card.Group>
     <Card>
-     <Card.Content>
-     <title>{props.title}</title>
-     <div className = 'content'>
-         Homeworld: {props.homeworld}
-         Birth Year: {props.birthYear}
+    <Card.Content>
+     <Card.Header>{props.name}</Card.Header>
+         Birth Year: {props.birth_year}<br />
          Gender: {props.gender}
-         Films: {props.films}
-     </div>
      </Card.Content>
     </Card>
 
