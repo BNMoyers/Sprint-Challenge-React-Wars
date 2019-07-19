@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Card } from 'semantic-ui-react'
 
 
-const Cards = () => (
+const Cards = () =>
+    (
+    
   <Card.Group>
     <Card>
       <Card.Content>
